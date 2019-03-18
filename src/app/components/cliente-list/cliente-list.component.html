@@ -1,0 +1,15 @@
+<div class="col-md-4" *ngFor="let cliente of clientes">
+	<div class="card text-center">
+		<div class="card-header d-flex justify-content-between align-items-center">
+			{{ cliente.title }}
+			<button class="btn btn-danger">
+			<i class="far fa-trash-alt"></i>	
+			</button>
+		</div>
+
+		<div class="card-body">
+			<p>{{ cliente.body }}</p>
+			<a href="" class="btn btn-info btn-block">EDITAR CLIENTE</a>
+		</div>
+	</div>
+</div>
